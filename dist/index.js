@@ -137,7 +137,7 @@ export default class AnimateNumber extends React.Component<Props, State> {
   }
 
   render() {
-    return this.props.renderContent(this.state.displayValue, this.props.)
+    return this.props.renderContent(this.state.displayValue)
   }
 
   startAnimate() {
