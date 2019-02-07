@@ -41,7 +41,7 @@ export default class AnimateNumber extends React.Component<Props, State> {
     steps : 45,
     value : 0,
     formatter : (val) => val,
-    renderContent: (value: number) => (<Text style={this.props.style}>
+    renderContent: (value: number, style: any) => (<Text>
       {value}
     </Text>),
     onFinish : () => {}
@@ -137,7 +137,7 @@ export default class AnimateNumber extends React.Component<Props, State> {
   }
 
   render() {
-    return this.props.renderContent(this.state.displayValue)
+    return this.props.renderContent(this.state.displayValue, this.props.)
   }
 
   startAnimate() {
